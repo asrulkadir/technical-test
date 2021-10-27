@@ -1,0 +1,37 @@
+.home-wrapper {
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+
+    .add-user-button {
+        cursor: pointer;
+    }
+
+    .add-user-button:hover {
+        text-decoration: underline;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 0 auto;
+    
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: start;
+            padding: 5px;
+        }
+
+        span {
+            cursor: pointer;
+        }
+
+        span:hover {
+            text-decoration: underline;
+        }
+    }
+}
