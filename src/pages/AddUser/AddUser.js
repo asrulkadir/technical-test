@@ -30,7 +30,7 @@ const AddUser = () => {
         axios.post(`https://gorest.co.in/public/v1/users`, data,
             {
                 headers: { 
-                    "Authorization": `Bearer 18588b7d696c49ea7e0d024889cecc0587751399fed533385f22a7b46bf62df8`,
+                    "Authorization": `Bearer {process.env.REACT_APP_API_KEY}`,
                 }
             }
         )
