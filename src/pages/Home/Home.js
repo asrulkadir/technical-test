@@ -35,7 +35,7 @@ const Home = () => {
         const index = e.target.closest("tr").getAttribute("data-key");
         if(window.confirm("Delete User?")) {
             axios.delete(`https://gorest.co.in/public/v1/users/${index}`, {
-            headers: { "Authorization": `Bearer {process.env.REACT_APP_API_KEY}`}
+            headers: { "Authorization": `Bearer ${process.env.REACT_APP_API_KEY}`}
             })
             .then(() => {
                 alert("Delete User Success");

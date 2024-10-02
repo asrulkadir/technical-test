@@ -47,7 +47,7 @@ const EditUser = () => {
         axios.patch(`https://gorest.co.in/public/v1/users/${index}`, data,
             {
                 headers: { 
-                    "Authorization": `Bearer {process.env.REACT_APP_API_KEY}`,
+                    "Authorization": `Bearer ${process.env.REACT_APP_API_KEY}`,
                 }
             }
         )
